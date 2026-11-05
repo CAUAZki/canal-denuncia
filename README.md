@@ -51,6 +51,24 @@ python3 -m http.server 3000
 
 Depois acesse <http://localhost:3000>. Não há instalação de dependências nem etapa de build.
 
+## GitHub Pages
+
+O site deve ser publicado diretamente da pasta raiz, sem compilar nem processar com Jekyll.
+O arquivo `.nojekyll` na raiz indica isso ao GitHub Pages. Mantenha `index.html`, `css/`, `js/`
+e `public/` juntos; os caminhos relativos funcionam também no subdiretório do repositório.
+
+1. Incorpore as alterações da branch de trabalho ao `main`: publicar pelo `main` não inclui
+   automaticamente as alterações de outras branches.
+2. Em **Settings → Pages**, use **Deploy from a branch**, branch **main**, pasta **/(root)**.
+3. Aguarde a execução **pages build and deployment** em **Actions** e abra o endereço indicado
+   em **Settings → Pages**. A navegação deve continuar usando `#/denuncia`, `#/acompanhar` etc.
+
+Se o site ainda não abrir, confira a resposta do endereço publicado e dos arquivos `index.html`,
+`js/catalog.js` e `css/styles.css`. Uma resposta **404** significa que o Pages não está entregando
+os arquivos — não é uma falha do formulário. Se a execução estiver verde e o endereço continuar
+em 404, use **Re-run all jobs** na execução do Pages para refazer a publicação. Para descartar
+uma versão antiga no navegador, faça uma recarga forçada (`Ctrl+Shift+R` ou `Cmd+Shift+R`).
+
 ## Acessos de demonstração
 
 | Perfil | E-mail | Senha |
