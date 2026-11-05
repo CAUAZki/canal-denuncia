@@ -1,4 +1,4 @@
-# Canal Seguro IA ---
+# Canal Seguro IA -
 
 Canal de denúncias de uma **organização fictícia**, criado para um projeto acadêmico sobre
 privacidade, LGPD e uso responsável de Inteligência Artificial. Todo o conteúdo e todos os dados
